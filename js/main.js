@@ -294,8 +294,38 @@ document.querySelectorAll('.portfolio-carousel-outer').forEach(outer => {
 });
 
 // =============================================
-// CONTACT FORM
+// HAMBURGER MENU
 // =============================================
+
+const hamburger = document.querySelector('.hamburger');
+const navDrawer = document.querySelector('.nav-drawer');
+const drawerOverlay = document.querySelector('.nav-drawer-overlay');
+
+function openDrawer() {
+  hamburger.classList.add('open');
+  hamburger.setAttribute('aria-expanded', 'true');
+  navDrawer.classList.add('open');
+  navDrawer.setAttribute('aria-hidden', 'false');
+  drawerOverlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeDrawer() {
+  hamburger.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+  navDrawer.classList.remove('open');
+  navDrawer.setAttribute('aria-hidden', 'true');
+  drawerOverlay.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+if (hamburger) {
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.contains('open') ? closeDrawer() : openDrawer();
+  });
+}
+if (drawerOverlay) drawerOverlay.addEventListener('click', closeDrawer);
+if (navDrawer) navDrawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
 
 // =============================================
 // CONTACT FORM

@@ -372,9 +372,19 @@
   .portfolio-section { padding: 48px 20px; }
   .portfolio-thumb { flex: 0 0 140px; height: 248px; }
   .portfolio-grid-long { grid-template-columns: 1fr; }
-  .strength-body { padding: 24px; }
-  .point-badge { width: 56px; height: 56px; }
+  .strength-card { flex-direction: column; gap: 0; }
+  .point-badge { width: 56px; height: 56px; margin-top: 0; margin-bottom: -20px; margin-left: 20px; z-index: 2; }
+  .strength-body { padding: 28px 20px 20px; margin-left: 0; width: 100%; box-sizing: border-box; }
   .cta-section--overlay { min-height: 280px; padding: 40px 20px; }
   .cta-inner-box { padding: 32px 24px; }
   .cta-video-bg img:nth-child(n+4) { display: none; }
+}
+
+@media (max-width: 480px) {
+  .works-hero-bg-text { font-size: clamp(60px, 22vw, 100px); }
+  .strength-title-en { font-size: 17px; }
+  .strength-desc-en { font-size: 12px; }
+  .strength-title-ja { font-size: 15px; }
+  .strength-desc-ja { font-size: 12px; }
+  .portfolio-thumb { flex: 0 0 120px; height: 213px; }
 }
