@@ -1,0 +1,380 @@
+/* =============================================
+   WORKS PAGE
+   ============================================= */
+
+/* Dark hero */
+.works-hero {
+  background: #1a1a1a;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 100px;
+}
+
+.works-hero-bg-text {
+  position: absolute;
+  font-size: 180px;
+  font-weight: 900;
+  color: rgba(255,255,255,0.04);
+  letter-spacing: -0.02em;
+  user-select: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  white-space: nowrap;
+}
+
+.works-hero-content {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.works-hero-eyebrow {
+  font-size: 15px;
+  color: #5ab8e8;
+  letter-spacing: 0.15em;
+  font-family: var(--font-jp);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.works-hero-title {
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+
+/* Strengths section */
+.strengths-section {
+  background: #ffffff;
+  padding: 80px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.strength-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.point-badge {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 2;
+  margin-top: -20px;
+}
+
+.point-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #555;
+}
+
+.point-num {
+  font-size: 22px;
+  font-weight: 900;
+  color: #1a1a1a;
+  line-height: 1;
+}
+
+.strength-body {
+  border: 2px solid #7ec8e3;
+  border-radius: 4px;
+  padding: 32px 40px 32px 48px;
+  flex: 1;
+  margin-left: -20px;
+  background: #fff;
+  margin-bottom: 24px;
+}
+
+.strength-title-en {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.strength-desc-en {
+  font-size: 14px;
+  color: #555;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.strength-title-ja {
+  font-size: 16px;
+  font-weight: 700;
+  color: #aaa;
+  font-family: var(--font-jp);
+  margin-bottom: 6px;
+}
+
+.strength-desc-ja {
+  font-size: 13px;
+  color: #bbb;
+  font-family: var(--font-jp);
+}
+
+/* Portfolio section */
+.portfolio-section {
+  background: #e8f4fb;
+  padding: 60px 48px;
+}
+
+.portfolio-section--shorts {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.portfolio-section--shorts .portfolio-heading,
+.portfolio-section--shorts .portfolio-hint {
+  padding: 0 48px;
+}
+
+.portfolio-heading {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.portfolio-eyebrow {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 900;
+  color: #1a1a1a;
+  letter-spacing: 0.02em;
+}
+
+.eyebrow-pr {
+  color: #5ab8e8;
+}
+
+.portfolio-type {
+  font-size: clamp(18px, 2.5vw, 28px);
+  font-weight: 700;
+  color: #444;
+  margin-top: 4px;
+}
+
+.portfolio-hint {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 32px;
+  line-height: 1.8;
+}
+
+.portfolio-hint-ja {
+  font-size: 12px;
+  color: #999;
+  font-weight: 400;
+  font-family: var(--font-jp);
+}
+
+/* Shorts marquee (2-row, top=forward / bottom=reverse) */
+.shorts-marquee-wrap {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@keyframes shorts-fwd {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes shorts-rev {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.shorts-marquee {
+  display: flex;
+  gap: 12px;
+  width: max-content;
+}
+
+.shorts-marquee--fwd {
+  animation: shorts-fwd 28s linear infinite;
+}
+
+.shorts-marquee--rev {
+  animation: shorts-rev 28s linear infinite;
+}
+
+.shorts-marquee:hover {
+  animation-play-state: paused;
+}
+
+.portfolio-thumb {
+  display: block;
+  flex: 0 0 200px;
+  height: 355px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #1a1a1a;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.portfolio-thumb:hover {
+  transform: scale(1.02);
+}
+
+.portfolio-thumb::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Ccircle cx='40' cy='40' r='38' fill='rgba(255%2C255%2C255%2C0.9)'/%3E%3Cpolygon points='32%2C22 32%2C58 60%2C40' fill='%231a1a1a'/%3E%3C/svg%3E") center/56px no-repeat;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 2;
+}
+.portfolio-thumb:hover::after { opacity: 1; }
+
+.portfolio-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.portfolio-thumb--tiktok { position: relative; }
+.tiktok-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #000;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+/* Long grid: 2 across */
+.portfolio-section--long {
+  background: #ffffff;
+  border-top: 1px solid #e4e4e4;
+}
+
+.portfolio-grid-long {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.portfolio-iframe-wrap {
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  background: #1a1a1a;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+.portfolio-iframe-wrap iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+}
+
+/* CTA overlay */
+.cta-section--overlay {
+  position: relative;
+  overflow: hidden;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 32px;
+  background: #111;
+}
+
+.cta-video-bg {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  gap: 3px;
+  z-index: 0;
+}
+
+.cta-video-bg img {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.28);
+  display: block;
+}
+
+.cta-inner-box {
+  position: relative;
+  z-index: 1;
+  border: 2px solid rgba(255,255,255,0.5);
+  padding: 44px 72px;
+  text-align: center;
+  max-width: 520px;
+  width: 100%;
+}
+
+.cta-title-en {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  margin-bottom: 6px;
+}
+
+.cta-section--overlay .cta-check {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.cta-section--overlay .cta-text {
+  font-size: 13px;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 28px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .works-hero { min-height: 240px; }
+  .strengths-section { padding: 48px 24px; }
+  .portfolio-section { padding: 48px 20px; }
+  .portfolio-thumb { flex: 0 0 140px; height: 248px; }
+  .portfolio-grid-long { grid-template-columns: 1fr; }
+  .strength-body { padding: 24px; }
+  .point-badge { width: 56px; height: 56px; }
+  .cta-section--overlay { min-height: 280px; padding: 40px 20px; }
+  .cta-inner-box { padding: 32px 24px; }
+  .cta-video-bg img:nth-child(n+4) { display: none; }
+}

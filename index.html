@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISSEI | ショート動画クリエイター</title>
+  <meta name="description" content="Japan's No.1 short-form creator. 非言語コメディで世界をつなぐ。笑顔と元気をお届けする。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="#home" class="logo-wrap">
+      <span class="logo-sub" data-i18n="header.tagline">笑顔と元気をお届けする</span>
+      <img src="images/logo-header.png" alt="ISSEI" class="logo-img">
+    </a>
+    <nav class="header-nav">
+      <a href="index.html" class="active" data-i18n="nav.home">HOME</a>
+      <a href="works.html" data-i18n="nav.works">WORKS</a>
+      <div class="nav-more">
+        <span class="nav-more-trigger" data-i18n="nav.more">More</span><span class="nav-more-arrow">&#x25BE;</span>
+        <div class="nav-dropdown">
+          <a href="index.html#profile">Profile</a>
+          <a href="index.html#news">News</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-right">
+      <div class="header-sns">
+        <a href="https://www.instagram.com/issei_0806" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.2.1 4.7 1.7 4.8 4.8.1 1.3.1 1.6.1 4.8 0 3.2 0 3.6-.1 4.8-.1 3.2-1.6 4.7-4.8 4.8-1.3.1-1.6.1-4.8.1-3.2 0-3.6 0-4.8-.1-3.2-.1-4.7-1.7-4.8-4.8C2.2 15.6 2.2 15.3 2.2 12c0-3.2 0-3.6.1-4.8C2.5 3.9 4 2.4 7.2 2.3 8.5 2.2 8.8 2.2 12 2.2zm0-2.2C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7C8.3 24 8.7 24 12 24s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/share/18R8EUJGQv/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M24 12.1C24 5.4 18.6 0 12 0S0 5.4 0 12.1C0 18.1 4.4 23.1 10.1 24v-8.4H7.1v-3.5h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9v2.3h3.4l-.5 3.5h-2.8V24C19.6 23.1 24 18.1 24 12.1z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@issei0806" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.8 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@issei0806" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24"><path d="M19.6 3.3A4.9 4.9 0 0 1 14.7 0h-3.5v16.4a2.9 2.9 0 0 1-2.9 2.5 2.9 2.9 0 0 1-2.9-2.9 2.9 2.9 0 0 1 2.9-2.9c.3 0 .5 0 .8.1V9.6a6.4 6.4 0 0 0-.8 0A6.4 6.4 0 0 0 2 16a6.4 6.4 0 0 0 6.4 6.4A6.4 6.4 0 0 0 14.7 16V8.2a8.3 8.3 0 0 0 4.9 1.6V6.4a4.9 4.9 0 0 1-4.9-3.1h4.9z"/></svg>
+        </a>
+      </div>
+      <div class="lang-toggle">
+        <button class="lang-btn" data-lang="en">🇺🇸</button>
+        <button class="lang-btn" data-lang="ja">🇯🇵</button>
+      </div>
+      <a href="contact.html" class="btn-contact" data-i18n="nav.contact">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <img src="images/logo.png" alt="ISSEI" class="hero-issei-logo">
+  </section>
+
+  <!-- TAGLINE -->
+  <section class="tagline-section">
+    <p class="tagline-main" data-i18n="tagline.main">Creating content that brings <span class="hi-teal">smiles</span> and <span class="hi-orange">energy</span> to people around the world.</p>
+    <p class="tagline-sub" data-i18n="tagline.sub">We post on YouTube, TikTok, Instagram, Facebook, msn, and LINE VOOM!</p>
+  </section>
+
+  <!-- VIDEO GALLERY -->
+  <section class="video-section" id="videos">
+    <div class="video-marquee-wrap">
+      <div class="video-marquee">
+        <a href="https://www.youtube.com/shorts/B6LXjl6qYEU" target="_blank" rel="noopener" class="video-thumb">
+          <img src="images/video1.png" alt="ISSEI Short">
+        </a>
+        <a href="https://www.youtube.com/shorts/OdY8fO38qZ0" target="_blank" rel="noopener" class="video-thumb">
+          <img src="images/video2.png" alt="ISSEI Short">
+        </a>
+        <a href="https://www.youtube.com/shorts/y8MEMwSoAbQ" target="_blank" rel="noopener" class="video-thumb">
+          <img src="images/video3.png" alt="ISSEI Short">
+        </a>
+        <a href="https://www.facebook.com/reel/1488280432065754" target="_blank" rel="noopener" class="video-thumb">
+          <img src="images/video4.png" alt="ISSEI Short">
+        </a>
+        <a href="https://www.youtube.com/shorts/hHVqIocbuKQ" target="_blank" rel="noopener" class="video-thumb">
+          <img src="images/video5.png" alt="ISSEI Short">
+        </a>
+        <a href="https://www.youtube.com/shorts/uNd3X2FQv8E" target="_blank" rel="noopener" class="video-thumb">
+          <img src="images/video6.png" alt="ISSEI Short">
+        </a>
+        <!-- duplicate set for seamless loop -->
+        <a href="https://www.youtube.com/shorts/B6LXjl6qYEU" target="_blank" rel="noopener" class="video-thumb">
+          <img src="images/video1.png" alt="ISSEI Short">
+        </a>
+        <a href="https://www.youtube.com/shorts/OdY8fO38qZ0" target="_blank" rel="noopener" class="video-thumb">
+          <img src="images/video2.png" alt="ISSEI Short">
+        </a>
+        <a href="https://www.youtube.com/shorts/y8MEMwSoAbQ" target="_blank" rel="noopener" class="video-thumb">
+          <img src="images/video3.png" alt="ISSEI Short">
+        </a>
+        <a href="https://www.facebook.com/reel/1488280432065754" target="_blank" rel="noopener" class="video-thumb">
+          <img src="images/video4.png" alt="ISSEI Short">
+        </a>
+        <a href="https://www.youtube.com/shorts/hHVqIocbuKQ" target="_blank" rel="noopener" class="video-thumb">
+          <img src="images/video5.png" alt="ISSEI Short">
+        </a>
+        <a href="https://www.youtube.com/shorts/uNd3X2FQv8E" target="_blank" rel="noopener" class="video-thumb">
+          <img src="images/video6.png" alt="ISSEI Short">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-num" data-target="91" data-suffix="M">91M</div>
+        <div class="stat-label" data-i18n="stat.followers">SNS Total Followers</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="74" data-suffix="M">74M</div>
+        <div class="stat-label" data-i18n="stat.youtube">YouTube Subscribers</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="64" data-suffix="B">64B</div>
+        <div class="stat-label" data-i18n="stat.views">Total Views</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="0.7" data-suffix="B">0.7B</div>
+        <div class="stat-label" data-i18n="stat.monthly">Monthly Views (Mar)</div>
+      </div>
+    </div>
+    <p class="stats-date">as of April 26, 2026</p>
+  </section>
+
+  <!-- PROFILE -->
+  <section class="profile-section" id="profile">
+    <h2 class="profile-heading" data-i18n="profile.heading">Profile</h2>
+    <div class="profile-card">
+      <div class="profile-photo">
+        <img src="images/IMG_0517 2.JPG" alt="ISSEI">
+      </div>
+      <div>
+        <div class="profile-info-name">ISSEI</div>
+        <div class="profile-info-title" data-i18n="profile.title">Japan's No.1 Short-Form Creator</div>
+        <div class="profile-info-bio" data-i18n="profile.bio">非言語コメディで世界をつなぎ、笑顔と元気をお届けする。</div>
+        <div class="profile-sns-icons">
+          <a href="https://www.instagram.com/issei_0806" target="_blank" rel="noopener" class="profile-sns-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.2.1 4.7 1.7 4.8 4.8.1 1.3.1 1.6.1 4.8 0 3.2 0 3.6-.1 4.8-.1 3.2-1.6 4.7-4.8 4.8-1.3.1-1.6.1-4.8.1-3.2 0-3.6 0-4.8-.1-3.2-.1-4.7-1.7-4.8-4.8C2.2 15.6 2.2 15.3 2.2 12c0-3.2 0-3.6.1-4.8C2.5 3.9 4 2.4 7.2 2.3 8.5 2.2 8.8 2.2 12 2.2zm0-2.2C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7C8.3 24 8.7 24 12 24s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/issei0806official" target="_blank" rel="noopener" class="profile-sns-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M24 12.1C24 5.4 18.6 0 12 0S0 5.4 0 12.1C0 18.1 4.4 23.1 10.1 24v-8.4H7.1v-3.5h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9v2.3h3.4l-.5 3.5h-2.8V24C19.6 23.1 24 18.1 24 12.1z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@issei0806" target="_blank" rel="noopener" class="profile-sns-icon" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.8 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@issei0806" target="_blank" rel="noopener" class="profile-sns-icon" aria-label="TikTok">
+            <svg viewBox="0 0 24 24"><path d="M19.6 3.3A4.9 4.9 0 0 1 14.7 0h-3.5v16.4a2.9 2.9 0 0 1-2.9 2.5 2.9 2.9 0 0 1-2.9-2.9 2.9 2.9 0 0 1 2.9-2.9c.3 0 .5 0 .8.1V9.6a6.4 6.4 0 0 0-.8 0A6.4 6.4 0 0 0 2 16a6.4 6.4 0 0 0 6.4 6.4A6.4 6.4 0 0 0 14.7 16V8.2a8.3 8.3 0 0 0 4.9 1.6V6.4a4.9 4.9 0 0 1-4.9-3.1h4.9z"/></svg>
+          </a>
+          <a href="https://voom.line.me/ch/issei0806" target="_blank" rel="noopener" class="profile-sns-icon profile-sns-icon--img" aria-label="LINE VOOM">
+            <img src="images/icon-line2.png" alt="LINE VOOM">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="news-section" id="news">
+    <p class="news-heading" data-i18n="news.label">News</p>
+    <div class="news-grid">
+      <a href="news1.html" class="news-card">
+        <div class="news-card-thumb" style="padding:0;">
+          <img src="images/profile.jpg" alt="70M Subscribers" style="position:static;width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="news-card-body">
+          <div class="news-card-title" data-i18n="news.1.title">YouTubeチャンネル登録者数 7,000万人 突破</div>
+        </div>
+      </a>
+      <a href="news2.html" class="news-card">
+        <div class="news-card-thumb" style="padding:0;">
+          <img src="images/news1.jpg" alt="Forbes JAPAN 30 UNDER 30" style="position:static;width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="news-card-body">
+          <div class="news-card-title" data-i18n="news.2.title">「Forbes JAPAN 30 UNDER 30 2025」選出</div>
+        </div>
+      </a>
+      <a href="news3.html" class="news-card">
+        <div class="news-card-thumb" style="padding:0;">
+          <img src="images/news2.jpg" alt="JFE Steel" style="position:static;width:100%;height:100%;object-fit:cover;object-position:center 30%;">
+        </div>
+        <div class="news-card-body">
+          <div class="news-card-title" data-i18n="news.3.title">JFEスチールとのコラボ動画を初公開</div>
+        </div>
+      </a>
+      <a href="news4.html" class="news-card">
+        <div class="news-card-thumb" style="padding:0;">
+          <img src="images/news3.png" alt="TBS Nスタ" style="position:static;width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="news-card-body">
+          <div class="news-card-title" data-i18n="news.4.title">ガーナ支援プロジェクト、TBS「Nスタ」で紹介</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section cta-section--overlay">
+    <div class="cta-video-bg">
+      <img src="https://img.youtube.com/vi/B6LXjl6qYEU/hqdefault.jpg" alt="">
+      <img src="https://img.youtube.com/vi/OdY8fO38qZ0/hqdefault.jpg" alt="">
+      <img src="https://img.youtube.com/vi/y8MEMwSoAbQ/hqdefault.jpg" alt="">
+      <img src="https://img.youtube.com/vi/hHVqIocbuKQ/hqdefault.jpg" alt="">
+      <img src="https://img.youtube.com/vi/uNd3X2FQv8E/hqdefault.jpg" alt="">
+      <img src="https://img.youtube.com/vi/2mJEm8zOk-o/hqdefault.jpg" alt="">
+    </div>
+    <div class="cta-inner-box">
+      <p class="cta-check">＼ Check it! ／</p>
+      <p class="cta-title-en">For Business &amp; PR Inquiries</p>
+      <p class="cta-text" data-i18n="news.cta">ビジネス・PR案件のお問い合わせはこちら</p>
+      <a href="contact.html" class="btn-cta" data-i18n="nav.contact">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- WORKS / MEDIA -->
+  <section class="works-section" id="works">
+    <div class="works-heading">
+      <h2 data-i18n="works.title">Works / Media</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="tl-block">
+        <div class="tl-year">2025</div>
+        <div class="tl-items">
+          <div class="tl-item" data-i18n="work.2025.1"><strong>Forbes JAPAN 30 UNDER 30 2025</strong> 選出</div>
+          <div class="tl-item" data-i18n="work.2025.2">APEC 2025 KOREA — <strong>「Global Friends Night」</strong></div>
+          <div class="tl-item" data-i18n="work.2025.3">CreatorWeek Macao 2025</div>
+          <div class="tl-item" data-i18n="work.2025.4">TBS「Nスタ」特集出演</div>
+          <div class="tl-item" data-i18n="work.2025.5">SEOULCon 2025</div>
+        </div>
+      </div>
+
+      <div class="tl-block">
+        <div class="tl-year">2023</div>
+        <div class="tl-items">
+          <div class="tl-item" data-i18n="work.2023.1">SAPPORO COLLECTION 2023 SPRING/SUMMER</div>
+          <div class="tl-item" data-i18n="work.2023.2">日本テレビ「School革命!」</div>
+          <div class="tl-item" data-i18n="work.2023.3"><strong>YouTube Fanfest Japan 2023</strong></div>
+        </div>
+      </div>
+
+      <div class="tl-block">
+        <div class="tl-year">2022</div>
+        <div class="tl-items">
+          <div class="tl-item" data-i18n="work.2022.1">テレビ東京「レベチな人、見つけた」</div>
+          <div class="tl-item" data-i18n="work.2022.2">MUSIC ON! TV（M-ON!）「Da-iCE meets GOAT」</div>
+          <div class="tl-item" data-i18n="work.2022.3">SAPPORO COLLECTION 2022 AUTUMN/WINTER</div>
+          <div class="tl-item" data-i18n="work.2022.4"><strong>TikTok CREATOR AWARD 2022</strong></div>
+        </div>
+      </div>
+
+      <div class="tl-block">
+        <div class="tl-year">2021</div>
+        <div class="tl-items">
+          <div class="tl-item" data-i18n="work.2021.1"><strong>TikTok CREATOR AWARD 2021</strong></div>
+        </div>
+      </div>
+
+      <div class="tl-block">
+        <div class="tl-year">2019</div>
+        <div class="tl-items">
+          <div class="tl-item" data-i18n="work.2019.1">テレビCM — <strong>girls「友情No.1:ケンカ編」</strong></div>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:48px;">
+      <a href="works.html" class="btn-see-more" data-i18n="works.seemore">See More</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-row">
+      <a href="#home" class="footer-row-home" data-i18n="nav.home">HOME</a>
+      <a href="works.html" class="footer-row-works" data-i18n="nav.works">WORKS</a>
+    </div>
+    <div class="footer-logo-text"><img src="images/logo.png" alt="ISSEI"></div>
+    <div class="footer-sns">
+      <a href="https://www.instagram.com/issei_0806" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.2.1 4.7 1.7 4.8 4.8.1 1.3.1 1.6.1 4.8 0 3.2 0 3.6-.1 4.8-.1 3.2-1.6 4.7-4.8 4.8-1.3.1-1.6.1-4.8.1-3.2 0-3.6 0-4.8-.1-3.2-.1-4.7-1.7-4.8-4.8C2.2 15.6 2.2 15.3 2.2 12c0-3.2 0-3.6.1-4.8C2.5 3.9 4 2.4 7.2 2.3 8.5 2.2 8.8 2.2 12 2.2zm0-2.2C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7C8.3 24 8.7 24 12 24s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/issei0806official" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M24 12.1C24 5.4 18.6 0 12 0S0 5.4 0 12.1C0 18.1 4.4 23.1 10.1 24v-8.4H7.1v-3.5h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9v2.3h3.4l-.5 3.5h-2.8V24C19.6 23.1 24 18.1 24 12.1z"/></svg>
+      </a>
+      <a href="https://www.youtube.com/@issei0806" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.8 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@issei0806" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg viewBox="0 0 24 24"><path d="M19.6 3.3A4.9 4.9 0 0 1 14.7 0h-3.5v16.4a2.9 2.9 0 0 1-2.9 2.5 2.9 2.9 0 0 1-2.9-2.9 2.9 2.9 0 0 1 2.9-2.9c.3 0 .5 0 .8.1V9.6a6.4 6.4 0 0 0-.8 0A6.4 6.4 0 0 0 2 16a6.4 6.4 0 0 0 6.4 6.4A6.4 6.4 0 0 0 14.7 16V8.2a8.3 8.3 0 0 0 4.9 1.6V6.4a4.9 4.9 0 0 1-4.9-3.1h4.9z"/></svg>
+      </a>
+      <a href="https://voom.line.me/ch/issei0806" target="_blank" rel="noopener" aria-label="LINE VOOM">
+        <img src="images/icon-line.png" alt="LINE VOOM">
+      </a>
+    </div>
+    <p class="footer-copy" data-i18n="footer.copy">Copyright © 株式会社 ISSEI All rights Reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
