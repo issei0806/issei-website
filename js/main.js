@@ -333,13 +333,25 @@ if (navDrawer) navDrawer.querySelectorAll('a').forEach(a => a.addEventListener('
 
 const form = document.getElementById('contact-form');
 if (form) {
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const toast = document.querySelector('.toast');
-    const toastKey = 'toast.msg';
-    toast.textContent = translations[currentLang][toastKey];
+    const btn = form.querySelector('.btn-send');
+    btn.disabled = true;
+
+    const res = await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString()
+    }).catch(() => null);
+
+    const ok = res && res.ok;
+    toast.textContent = ok
+      ? translations[currentLang]['toast.msg']
+      : (currentLang === 'ja' ? '送信に失敗しました。もう一度お試しください。' : 'Failed to send. Please try again.');
     toast.classList.add('show');
-    form.reset();
+    if (ok) form.reset();
+    btn.disabled = false;
     setTimeout(() => toast.classList.remove('show'), 3500);
   });
 }
