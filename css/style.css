@@ -414,7 +414,7 @@ header.scrolled {
   align-items: center;
   justify-content: center;
 }
-.profile-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.profile-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; }
 .profile-photo-placeholder {
   font-size: 10px;
   color: var(--text-light);
@@ -806,6 +806,10 @@ body.page-article .logo-sub { color: rgba(0,0,0,0.6); }
 body.page-article .header-sns svg { fill: #333; }
 body.page-article .header-nav a { color: rgba(0,0,0,0.7); }
 body.page-article .header-nav a:hover { color: #000; }
+body.page-article .nav-more-trigger,
+body.page-article .nav-more-arrow { color: rgba(0,0,0,0.7); }
+body.page-article .nav-more:hover .nav-more-trigger,
+body.page-article .nav-more:hover .nav-more-arrow { color: #000; }
 body.page-article .lang-btn { border-color: rgba(0,0,0,0.25); background: rgba(0,0,0,0.04); }
 body.page-article .btn-contact { background: var(--yellow); color: #111; }
 
